@@ -20,6 +20,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--black);
     margin: 0;
+    background-image: linear-gradient(to top, #dfe9f3 0%, var(--white) 100%);
 }
 a {
     text-decoration: none;
@@ -34,8 +35,9 @@ h2 {
 }
 h3 {
     font-size: 1.8rem;
+    text-align: center;
 }
-h1, h2, h3 {
+h1, h2 {
     text-align: center;
     font-family: 'Ramabhadra', sans-serif;
 }
@@ -60,6 +62,14 @@ header {
         padding-top: 30px;
         margin: 1rem;
     }
+}
+.sombra {
+    -webkit-box-shadow: 0px 4px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 16px -4px rgba(0,0,0,0.75);
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 .title {
     width: 100%;
@@ -104,6 +114,7 @@ header {
     background-size: cover;
     height: 550px;
     position: relative;
+    margin-bottom: 2rem;
 }
 .contenido-hero {
     position: absolute;
