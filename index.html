@@ -90,30 +90,36 @@
                 </div> 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ab ullam quidem ex ipsum, quibusdam iste minus accusamus eos adipisci.</p>
             </section>
+            
+        </div>
+        <div class="formulario-padre">
             <section>
                 <h2>Contacto</h2>
-                <form action="">
+                <form action="" class="formulario">
                     <fieldset>
-                        <legend>Contáctame llenando todos los campos</legend>
-                        <div>
-                            <label for="">Nombre</label>
-                            <input type="text" placeholder="Tu Nombre">
-                        </div>
-                        <div>
-                            <label for="">Telefono</label>
-                            <input type="tel" placeholder="Telefono">
-                        </div>
-                        <div>
-                            <label for="">Correo</label>
-                            <input type="email" placeholder="Tu correo">
-                        </div>
-                        <div>
-                            <label for="">Mensaje</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div>
-                            <input type="submit" value="Enviar">
-                        </div>
+                        <div class="contenedor-campos">
+                            <legend>Contáctame llenando todos los campos</legend>
+                            <div class="campo">
+                                <label for="">Nombre</label>
+                                <input class="input-text" type="text" placeholder="Tu Nombre">
+                            </div>
+                            <div class="campo">
+                                <label for="">Telefono</label>
+                                <input class="input-text" type="tel" placeholder="Telefono">
+                            </div>
+                            <div class="campo">
+                                <label for="">Correo</label>
+                                <input class="input-text" type="email" placeholder="Tu correo">
+                            </div>
+                            <div class="campo">
+                                <label for="">Mensaje</label>
+                                <textarea class="input-text" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="campo alinear-derecha flex">
+                                <input class="bottom w-100" type="submit" value="Enviar">
+                            </div>
+                        </div> <!--contenedor de todos los campos-->
+                        
                     </fieldset>
                 </form>
             </section>

@@ -11,6 +11,14 @@ html {
     font-size: 62.5%;
     margin: 0;
     padding: 0;
+    scroll-snap-type: y proximity; /*efecto scroll*/
+}
+/**/scroll snap
+.servicios,
+header, 
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 *, *::before, *:after {
     box-sizing: inherit;
@@ -149,6 +157,24 @@ header {
     width: 90%;
     text-align: center;
 }
+.bottom:hover {
+    cursor: pointer;
+}
+/*utilidades*/
+.w-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-100 {
+        width: auto;
+    }
+}
+.alinear-derecha {
+    justify-content: flex-end;
+}
+.flex {
+    display: flex;
+}
 @media (min-width: 480px) {
     .bottom {
         width: auto;
@@ -184,3 +210,50 @@ header {
     justify-content: center;
     align-items: center;
 } 
+
+/** formulario**/
+.formulario {
+    background-color: var(--gray);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset {
+    border: none; /*quitar lineas al formulario*/
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+.contenedor-campos {
+
+}
+.campo {
+    margin-bottom: 1rem;
+
+}
+.campo label {
+    color: var(--white);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.campo .bottom {
+    border: none;
+}
+@media (min-width: 768px) {
+    .formulario-padre {
+        margin: 0 auto;
+    }
+}
