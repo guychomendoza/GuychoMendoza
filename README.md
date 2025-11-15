@@ -1,6 +1,6 @@
 # 👋 Hey! I'm Luis "Guycho" Mendoza
 
-🎓 Software Engineering & Psychology student  
+🎓 Software Engineering student  
 🧠 Passionate about Artificial Intelligence and technology  
 🎨 Visual artist: muralist, sign painter, and bassist
 
